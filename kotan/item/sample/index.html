@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta name="工事担任者過去問 ランダム出題" content="index">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <title>工事担任者過去問 ランダム出題</title>
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <style>
+            *, *:before, *:after {
+                -webkit-appearance: none;
+                margin:0px;
+                padding:0px;
+            }
+            html{
+                width:100%;
+                max-width:700px;
+                margin:0px;
+                padding:10px;
+                background-color:#FFFFFF;
+                -webkit-box-sizing: border-box; /* Webkit */
+                -moz-box-sizing: border-box; /* Firefox */
+                box-sizing: border-box; /* 標準 */
+            }
+            body{
+                width:100%;
+                margin:0px;
+                padding:0px;
+            }
+            body {
+              margin: 0;
+              display: flex;
+              flex-flow: column;
+              height:100%;
+              min-height: calc(var(--vh, 1vh) * 100);
+              position: relative;
+              padding-bottom: 6rem;/*←footerの高さ*/
+              box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+            }
+            header {
+                background: #333333;
+                color: #ffffff;
+                height: 40px;
+            }
+            main {
+              flex: 1;
+              position: relative;
+            }
+            footer {
+                width:100%;
+                background: #333333;
+                color: #ffffff;
+                bottom:10px;
+                position: absolute;
+            }
+            table{
+                width:100%;
+                background-color:#FFFFFF;
+            }
+            h3{
+                margin-top:0.5rem;
+                margin-bottom:1.3rem;
+            }
+            p,img{
+                width:100%;
+            }
+            button{
+                background-color:#CCCCCC;
+                font-size:1.5rem;
+                height:4rem;
+                width:100%;
+            }
+            .flex{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: no-wrap;
+                width:100%;
+                justify-content: space-around;
+            }
+            div.flex div{
+                width:100%;
+                height:5rem;
+            }
+            div.flex div button{
+                height:100%;
+            }
+            details{
+                margin-top:0.5rem;
+            }
+            summary{
+                font-size:1.6rem;
+            }
+
+            details b,details u{
+                font-size:1.2rem;
+                color:#FF0000;
+                background-color:#FFEEFF;
+            }
+            details.ans div{
+                width:100%;
+                text-align:center;
+            }
+            details.ans div b{
+                font-size:4rem;
+                background-color:#FFFFFF;
+            }
+            textarea{
+                width:100%;
+                height:6rem;
+            }
+        </style>
+        <script>
+        const setFillHeight = () => {
+        const vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+
+        // 画面のサイズ変動があった時に高さを再計算する
+        window.addEventListener('resize', setFillHeight);
+
+        // 初期化
+        setFillHeight();
+        </script>
+    </head>
+    <body>
+        <main>
+        <h2>工事担任者過去問 ランダム出題</h2>
+        <p><button onclick="location.href='#';">進捗確認</button></p>
+                <h3> 平成27年度第2回 総合種 法規 第5問 オ </h3>
+        <p><img src="https://image02.seesaawiki.jp/k/n/koutan/35f085e47aec1b38.jpg"></p>
+        <details class="ans">
+          <summary>答案</summary>
+          <div><b>2</b></div>
+        </details>
+        <details>
+          <summary>解説</summary>
+          電磁的記録とは、電子的方式、磁気的方式その他<b><u>人の知覚によっては認識</u></b>することができない方式で作られる記録であって、電子計算機による情報処理の用に供されるものをいう。        </details>
+      </main>
+
+      <footer>
+        <div class="flex">
+            <div><button onclick="alert('不正解\n\n正解は2番です');">1</button></div>
+            <div><button onclick="alert('正解！！\n\n次の問題へ進みます');location.href='#">2</button></div>
+            <div><button onclick="alert('不正解\n\n正解は2番です');">3</button></div>
+            <div><button onclick="alert('不正解\n\n正解は2番です');">4</button></div>
+            <div><button onclick="alert('不正解\n\n正解は2番です');">5</button></div>
+            <div><button onclick="alert('不正解\n\n正解は2番です');">6</button></div>
+            <div><button onclick="alert('不正解\n\n正解は2番です');">7</button></div>
+            <div><button onclick="location.href='#';">保留</button></div>
+        </div>
+      </footer>
+    </body>
+</html>

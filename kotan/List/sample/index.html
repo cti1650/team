@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta name="工事担任者過去問 進捗確認" content="index">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <title>工事担任者過去問 進捗確認</title>
+        <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+        <style>
+            *, *:before, *:after {
+                -webkit-appearance: none;
+                margin:0px;
+                padding:0px;
+            }
+            html{
+                width:100%;
+                max-width:700px;
+                margin:0px;
+                padding:10px;
+                background-color:#FFFFFF;
+                -webkit-box-sizing: border-box; /* Webkit */
+                -moz-box-sizing: border-box; /* Firefox */
+                box-sizing: border-box; /* 標準 */
+            }
+            body{
+                width:100%;
+                margin:0px;
+                padding:0px;
+            }
+            body {
+              margin: 0;
+              display: flex;
+              flex-flow: column;
+              height:100%;
+              min-height: calc(var(--vh, 1vh) * 100);
+              position: relative;
+              padding-bottom: 6rem;/*←footerの高さ*/
+              box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+            }
+            header {
+                background: #333333;
+                color: #ffffff;
+                height: 40px;
+            }
+            main {
+              flex: 1;
+              position: relative;
+            }
+            footer {
+                width:100%;
+                background: #333333;
+                color: #ffffff;
+                bottom:10px;
+                position: absolute;
+            }
+            table{
+                width:100%;
+                background-color:#FFFFFF;
+            }
+            h3{
+                margin-top:1rem;
+                margin-bottom:0.4rem;
+            }
+            p,img{
+                width:100%;
+            }
+            button{
+                background-color:#CCCCCC;
+                font-size:1.5rem;
+                height:4rem;
+                width:100%;
+            }
+            .flex{
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: no-wrap;
+                width:100%;
+                justify-content: space-around;
+            }
+            div.flex div{
+                width:100%;
+                height:5rem;
+            }
+            div.flex div button{
+                height:100%;
+            }
+            details{
+                margin-top:0.5rem;
+            }
+            summary{
+                font-size:1.6rem;
+            }
+
+            details b,details u{
+                font-size:1.2rem;
+                color:#FF0000;
+            }
+            details.ans div{
+                width:100%;
+                text-align:center;
+            }
+            details.ans div b{
+                font-size:4rem;
+            }
+            .reset{
+                margin-top:40px;
+            }
+            .reset button{
+                color:white;
+                background-color:orange;
+                font-weight: bold;
+            }
+            progress {
+             border: none;
+             background: crimson;
+            }
+
+            progress {
+             color: blue;
+            }
+            progress::-moz-progress-bar {
+             background: lightgray;
+            }
+
+            progress::-webkit-progress-value {
+             background: blue;
+            }
+
+            progress::-webkit-progress-bar {
+             background: lightgray;
+            }
+        </style>
+        <script>
+        const setFillHeight = () => {
+        const vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+
+        // 画面のサイズ変動があった時に高さを再計算する
+        window.addEventListener('resize', setFillHeight);
+
+        // 初期化
+        setFillHeight();
+        </script>
+
+    </head>
+    <body>
+        <h2>工事担任者過去問 進捗確認</h2>
+        <p><button onclick="location.href='#';">ランダム出題</button></p>
+        <h3>進捗実績</h3>
+        <ol>
+               </ol>
+        <h3>基礎</h3>
+        <progress value="50" max="633">70 %</progress>
+        <div>全 633問中 50問 正解済み</div>
+        <div><a href='./index.php?category=基礎'>基礎のみ出題</a></div>
+        <h4>伝送技術</h4>
+        <progress value="40" max="141">70 %</progress>
+        <div>科目 141問中 40問 正解済み</div>
+        <div><a href='./index.php?category=基礎&keyword=伝送技術'>基礎 伝送技術のみ出題</a></div>
+        <h4>伝送理論</h4>
+        <progress value="4" max="116">70 %</progress>
+        <div>科目 116問中 4問 正解済み</div>
+        <div><a href='./index.php?category=基礎&keyword=伝送理論'>基礎 伝送理論のみ出題</a></div>
+        <h4>論理回路</h4>
+        <progress value="1" max="115">70 %</progress>
+        <div>科目 115問中 1問 正解済み</div>
+        <div><a href='./index.php?category=基礎&keyword=論理回路'>基礎 論理回路のみ出題</a></div>
+        <h4>電子回路</h4>
+        <progress value="3" max="145">70 %</progress>
+        <div>科目 145問中 3問 正解済み</div>
+        <div><a href='./index.php?category=基礎&keyword=電子回路'>基礎 電子回路のみ出題</a></div>
+        <h4>電気回路</h4>
+        <progress value="2" max="116">70 %</progress>
+        <div>科目 116問中 2問 正解済み</div>
+        <div><a href='./index.php?category=基礎&keyword=電気回路'>基礎 電気回路のみ出題</a></div>
+        <h3>技術</h3>
+        <progress value="5" max="1437">70 %</progress>
+        <div>全 1437問中 5問 正解済み</div>
+        <div><a href='./index.php?category=技術'>技術のみ出題</a></div>
+        <h4>トラヒック理論等</h4>
+        <progress value="0" max="143">70 %</progress>
+        <div>科目 143問中 0問 正解済み</div>
+        <div><a href='./index.php?category=技術&keyword=トラヒック理論等'>技術 トラヒック理論等のみ出題</a></div>
+        <h4>ネットワークの技術</h4>
+        <progress value="0" max="145">70 %</progress>
+        <div>科目 145問中 0問 正解済み</div>
+        <div><a href='./index.php?category=技術&keyword=ネットワークの技術'>技術 ネットワークの技術のみ出題</a></div>
+        <h4>情報セキュリティ技術</h4>
+        <progress value="0" max="145">70 %</progress>
+        <div>科目 145問中 0問 正解済み</div>
+        <div><a href='./index.php?category=技術&keyword=情報セキュリティ技術'>技術 情報セキュリティ技術のみ出題</a></div>
+        <h4>接続工事の技術</h4>
+        <progress value="2" max="579">70 %</progress>
+        <div>科目 579問中 2問 正解済み</div>
+        <div><a href='./index.php?category=技術&keyword=接続工事の技術'>技術 接続工事の技術のみ出題</a></div>
+        <h4>端末設備の技術</h4>
+        <progress value="3" max="276">70 %</progress>
+        <div>科目 276問中 3問 正解済み</div>
+        <div><a href='./index.php?category=技術&keyword=端末設備の技術'>技術 端末設備の技術のみ出題</a></div>
+        <h4>総合デジタル通信の技術</h4>
+        <progress value="0" max="145">70 %</progress>
+        <div>科目 145問中 0問 正解済み</div>
+        <div><a href='./index.php?category=技術&keyword=総合デジタル通信の技術'>技術 総合デジタル通信の技術のみ出題</a></div>
+        <h4>電話・情報設備の配線用記号</h4>
+        <progress value="0" max="4">70 %</progress>
+        <div>科目 4問中 0問 正解済み</div>
+        <div><a href='./index.php?category=技術&keyword=電話・情報設備の配線用記号'>技術 電話・情報設備の配線用記号のみ出題</a></div>
+        <h3>法規</h3>
+        <progress value="39" max="546">70 %</progress>
+        <div>全 546問中 39問 正解済み</div>
+        <div><a href='./index.php?category=法規'>法規のみ出題</a></div>
+        <h4>不正アクセス禁止法</h4>
+        <progress value="6" max="6">70 %</progress>
+        <div>科目 6問中 6問 正解済み</div>
+        <div><a href='./index.php?category=法規&keyword=不正アクセス禁止法'>法規 不正アクセス禁止法のみ出題</a></div>
+        <h4>工事担任者規則</h4>
+        <progress value="12" max="58">70 %</progress>
+        <div>科目 58問中 12問 正解済み</div>
+        <div><a href='./index.php?category=法規&keyword=工事担任者規則'>法規 工事担任者規則のみ出題</a></div>
+        <h4>有線電気通信法</h4>
+        <progress value="3" max="53">70 %</progress>
+        <div>科目 53問中 3問 正解済み</div>
+        <div><a href='./index.php?category=法規&keyword=有線電気通信法'>法規 有線電気通信法のみ出題</a></div>
+        <h4>有線電気通信設備令</h4>
+        <progress value="5" max="80">70 %</progress>
+        <div>科目 80問中 5問 正解済み</div>
+        <div><a href='./index.php?category=法規&keyword=有線電気通信設備令'>法規 有線電気通信設備令のみ出題</a></div>
+        <h4>端末機器の技術適合認定</h4>
+        <progress value="2" max="26">70 %</progress>
+        <div>科目 26問中 2問 正解済み</div>
+        <div><a href='./index.php?category=法規&keyword=端末機器の技術適合認定'>法規 端末機器の技術適合認定のみ出題</a></div>
+        <h4>端末設備等規則</h4>
+        <progress value="8" max="162">70 %</progress>
+        <div>科目 162問中 8問 正解済み</div>
+        <div><a href='./index.php?category=法規&keyword=端末設備等規則'>法規 端末設備等規則のみ出題</a></div>
+        <h4>電子署名法</h4>
+        <progress value="2" max="18">70 %</progress>
+        <div>科目 18問中 2問 正解済み</div>
+        <div><a href='./index.php?category=法規&keyword=電子署名法'>法規 電子署名法のみ出題</a></div>
+        <h4>電気通信事業法</h4>
+        <progress value="1" max="143">70 %</progress>
+        <div>科目 143問中 1問 正解済み</div>
+        <div><a href='./index.php?category=法規&keyword=電気通信事業法'>法規 電気通信事業法のみ出題</a></div>
+         <h3>参考資料</h3>
+         <div>Seesaa Wiki 工担</div>
+         <ol>
+         <li><a href='https://seesaawiki.jp/koutan/d/%bf%f4%bb%fa%b0%c5%b5%ad%bd%b8'>数字暗記集</a></li>
+         <li><a href='https://seesaawiki.jp/koutan/d/AI%a4%c8DD%a4%ce%ca%ac%a4%b1'>AIとDDの分け</a></li>
+         <li><a href='https://seesaawiki.jp/koutan/d/%c5%c5%cf%c3%a1%a6%be%f0%ca%f3%c0%df%c8%f7%a4%ce%c7%db%c0%fe%cd%d1%b5%ad%b9%e6'>電話・情報設備の配線用記号</a></li>
+         <li><a href='https://seesaawiki.jp/koutan/d/%cb%a1%b5%ac%bb%b2%b9%cd%bb%f1%ce%c1'>法規参考資料</a></li>
+          </ol>
+          <div>電験三種Web</div>
+          <ol>
+          <li><a href='https://denken3web.com/blog/kikai/boolean-algebra/'>ブール代数</a></li>
+          </ol>
+          <div>まなびや youtube</div>
+          <ol>
+          <li><a href='https://www.youtube.com/user/manabiyaTV/videos'>動画リスト</a></li>
+          <li><a href='https://www.youtube.com/watch?v=0BITjoAgYvE'>ベン図　３つの図の論理積　準備編</a></li>
+           </ol>
+          <div style="display:flex;">
+          </div>
+        <div class="reset"><button onclick="location.href='#'">進捗リセット</button></div>
+        <div>UserID : </div>
+    </body>
+</html>
